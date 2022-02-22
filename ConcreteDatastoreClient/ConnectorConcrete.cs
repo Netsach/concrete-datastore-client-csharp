@@ -47,7 +47,7 @@ namespace ConnectorConcrete
         }
     }
 
-    public class AbstractClient
+    public class ConcreteDatastoreClient
     {
         public string url;
         public string token;
@@ -60,7 +60,7 @@ namespace ConnectorConcrete
         int delay_between_retries;
         Dictionary<object, object> external_cache;
 
-        public AbstractClient(
+        public ConcreteDatastoreClient(
             string url,
             string token = null,
             Dictionary<string, string> headers = null,
